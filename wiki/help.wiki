@@ -1,0 +1,11 @@
+#HTTP Monitor (httpmon) Help
+
+Setting up httpmon is quite simple once you understand the structure of objects. Here it is in outline form,
+
+  * Monitor
+    * Request
+      * 0 or more HTTP parameters
+    * Response
+      * 0 or more rules
+
+That is, a Monitor consists of a Request and a Response. The Request describes how to attempt a connection to the server. A Response describes what to expect in return in order to consider the server valid.
