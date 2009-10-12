@@ -1,0 +1,39 @@
+#HTTP Monitor (HTTPMon) Help
+
+Using HTTPMon is quite simple once you understand the structure of objects. Here it is in outline form,
+
+  * Monitor
+    * Request
+      * Interval
+      * URL
+      * 0 or more HTTP parameters
+    * Conditions (1 or more)
+    * Actions (1 or more)
+
+That is, a Monitor consists of a Request, Conditions, and Actions. The Request describes how to attempt a connection to the server. Conditions are criteria that determine the state of the server, valid or invalid. Actions are steps to perform based on the state of the server.
+
+To get started creating a new monitor, select Menu>Create Monitor. You will now see a form that allows you configure the monitor's name, request, conditions, and actions. Give the monitor a name, and then select a request. By default there are no requests in the system, so select "new". 
+
+You will now see another form that allows you to create a new Request. Requests stand apart from the Monitor in that they can be re-used. That is, when you create a second Monitor, you will be able to select and use the same Request you will create now.
+
+Give your new request a name, URL, interval, and 0 or more HTTP parameters. For Monitors based on this Request, HTTPMon will read the URL every _interval_ seconds, passing the set of given HTTP parameters. The response will be checked against the Conditions that you will configure in the next step.
+
+A Request is a URL and 0 or more HTTP parameters. Httpmon will perform an HTTP GET every Interval to test the state of the server. 
+
+Conditions are rules, or criteria that must evaluate to true for the server to be considered in a valid state. For example,
+
+  * ping (i.e., any response)  
+  * response received in ___ or less milliseconds
+  * HTTP response code is ___
+  * HTTP header ___ matches ___
+  * content matches ___
+
+Conditions are logically ANDed together; the server is in a valid state if all of the conditions evaluate to true.
+
+Actions are steps to perform based on the derived state of the server. For example,
+
+  * if state is ___, send SMS to ___
+  * if state is ___, send email to ___
+  * if state is ___, send notification
+
+Usually, you will perform actions when the server state is invalid.
