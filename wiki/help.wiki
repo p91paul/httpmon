@@ -4,8 +4,30 @@ Setting up httpmon is quite simple once you understand the structure of objects.
 
   * Monitor
     * Request
+      * Interval
+      * URL
       * 0 or more HTTP parameters
-    * Response
-      * 0 or more rules
+    * Conditions (0 or more)
+    * Actions
 
-That is, a Monitor consists of a Request and a Response. The Request describes how to attempt a connection to the server. A Response describes what to expect in return in order to consider the server valid.
+That is, a Monitor consists of a Request, Conditions, and Actions. The Request describes how to attempt a connection to the server. Conditions are criteria that determine that state of the server. Actions are steps to perform based on the state of the server.
+
+A Request is a URL and 0 or more HTTP parameters. Httpmon will perform an HTTP GET every Interval to test the state of the server. 
+
+Conditions are rules, or criteria that must evaluate to true for the server to be considered in a valid state. For example,
+
+  * ping (i.e., any response)  
+  * response received in ___ or less milliseconds
+  * HTTP response code is ___
+  * HTTP header ___ matches ___
+  * content matches ___
+
+Conditions are logically ANDed together; the server is in a valid state if all of the conditions evaluate to true.
+
+Actions are steps to perform based on the derived state of the server. For example,
+
+  * if state is ___, send SMS to ___
+  * if state is ___, send email to ___
+  * if state is ___, send notification
+
+Usually, you will perform actions when the server state is invalid.
