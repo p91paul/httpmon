@@ -12,28 +12,14 @@ Using HTTPMon is quite simple once you understand the structure of objects. Here
 
 That is, a Monitor consists of a Request, Conditions, and Actions. The Request describes how to attempt a connection to the server. Conditions are criteria that determine the state of the server, valid or invalid. Actions are steps to perform based on the state of the server.
 
-To get started creating a new monitor, select Menu>Create Monitor. You will now see a form that allows you configure the monitor's name, request, conditions, and actions. Give the monitor a name, and then select a request. By default there are no requests in the system, so select "new". 
+It is important to note that Requests, Conditions, and Actions live apart from any particular Monitor. The correct way to think about things is that you create some number of Requests, Conditions, and Actions, and then associate them together through a Monitor. Requests, Conditions, and Actions are the re-usable building blocks for Monitors. 
 
-You will now see another form that allows you to create a new Request. Requests stand apart from the Monitor in that they can be re-used. That is, when you create a second Monitor, you will be able to select and use the same Request you will create now.
+When you first start HTTPMon, you will see the Manage Monitors view. The lists your monitors and their status. Be default the list is empty, so let's create a new Monitor: select _Menu>Create Monitor_. You will now see the new monitor form that allows you configure the Monitor's name, Request, Conditions, and Actions. Give the Monitor a name, and then choose a Request. By default there are no Requests (unless you created one previously), so select "new". 
 
-Give your new request a name, URL, interval, and 0 or more HTTP parameters. For Monitors based on this Request, HTTPMon will read the URL every _interval_ seconds, passing the set of given HTTP parameters. The response will be checked against the Conditions that you will configure in the next step.
+You will now see another form that allows you to create a new Request. Again, even though you are creating a Request as a sub-task of creating a Monitor, this Request stands apart from the Monitor in that it will be usable in the creation of other Monitors. Give your new request a name, URL, interval, and 0 or more HTTP parameters. For Monitors based on this Request, HTTPMon will read the URL every _interval_ seconds, passing the set of given HTTP parameters. The response will be checked against the Conditions that you configure next. Now click Menu>Done. You will return to the Monitor creation form, and your new Request will be selected.
 
-A Request is a URL and 0 or more HTTP parameters. Httpmon will perform an HTTP GET every Interval to test the state of the server. 
+Now let's configure some Conditions. By default, the condition section is empty, so select "new". You will now see the new Condition form. At the top of the form, select the Condition type, and then will in the specific fields to create a new Condition instance. Select Menu>Done when finished. You can repeat the process to add more Conditions if you like. Again, these Condition may be re-used when you create a second, third, etc. Monitor.
 
-Conditions are rules, or criteria that must evaluate to true for the server to be considered in a valid state. For example,
+Finally, add one or more Actions. There are no actions by default, so select "new". You will see the new Action form. Similar to the new Condition form, select the Action type at the top of the form, and then fill in the fields for this specific Action. Select Menu>Done when finished.
 
-  * ping (i.e., any response)  
-  * response received in ___ or less milliseconds
-  * HTTP response code is ___
-  * HTTP header ___ matches ___
-  * content matches ___
-
-Conditions are logically ANDed together; the server is in a valid state if all of the conditions evaluate to true.
-
-Actions are steps to perform based on the derived state of the server. For example,
-
-  * if state is ___, send SMS to ___
-  * if state is ___, send email to ___
-  * if state is ___, send notification
-
-Usually, you will perform actions when the server state is invalid.
+Your Monitor is now complete, so select Menu>Done. You will return to the Manage Monitors view.
