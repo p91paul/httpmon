@@ -1,0 +1,17 @@
+#summary httpmon Quick Start
+
+To start monitoring your HTTP servers, you must create one or more _monitors_.  
+When you first start httpmon, you will see a message indicating that you have not yet defined any monitors. Start by creating one. A monitor has 4 basic components: 
+
+  * Name
+  * Request
+  * Conditions (one or more)
+  * Actions (zero or more)
+
+A monitor's _request_ describes how to contact the server. _Conditions_ define the conditions that must hold in order for the monitor to be considered valid, or "up". _Actions_ are actions that are taken when the monitor is not valid. The purpose of an action is to alert you in some manner.
+
+Choose *Menu>New Monitor* to begin creating a monitor. Fill out the _edit monitor_ form by giving your monitor a name, defining a request, defining one or more conditions, and optionally defining one or more actions. Editing the monitor's request and adding or editing conditions and actions will bring you to a new form. When finished editing, press back to return to the edit monitors form. When you are done creating your monitor, press *back*, or *Menu>Save*.
+
+To start your monitor, long-press it the monitor list, and select *Start*. 
+
+To modify an existing monitor, click it in the list (or long-press then click *Edit*). Monitors are automatically stopped before editing. You must restart manually after editing. To remove a monitor, long-press then click *Remove*. By the same token, from the edit monitors form, long-press conditions and actions to remove / edit them, and click to edit.
