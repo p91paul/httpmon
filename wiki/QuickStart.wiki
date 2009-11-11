@@ -1,9 +1,8 @@
 #summary httpmon Quick Start
 
-_If you want to make this software better for yourself and others, contact me with bugs, problems, suggestions, and feedback._
- 
-To start monitoring your HTTP servers, you must create one or more _monitors_.  
-When you first start httpmon, you will see a message indicating that you have not yet defined any monitors. Start by creating one. A monitor has 4 basic components: 
+_If you want to make this software better for yourself and others, contact me with bugs, problems, suggestions, and feedback: jeffrey.blattman@gmail.com.
+
+To start monitoring your HTTP servers, you must create one or more _monitors_. A monitor has 4 basic components: 
 
   * Name
   * Request
@@ -12,7 +11,7 @@ When you first start httpmon, you will see a message indicating that you have no
 
 A monitor's _request_ describes how to contact the server. _Conditions_ define the conditions that must hold in order for the monitor to be considered valid. _Actions_ are actions that are taken when the monitor is not valid. The purpose of an action is to alert you in some manner when the server is determined to be invalid.
 
-Choose *Menu>New Monitor* to begin creating a monitor. Fill out the _edit monitor_ form by giving your monitor a name, defining a request, defining one or more conditions, and optionally defining one or more actions. Editing the monitor's request and adding or editing conditions and actions will bring you to a new form. When finished editing, press back to return to the edit monitors form. When you are done creating your monitor, press *back*, or *Menu>Save*.
+When you first start httpmon, you will see a message indicating that you have not yet defined any monitors. Choose *Menu>New Monitor* to begin creating a monitor. Fill out the _edit monitor_ form by giving your monitor a name, defining a request, defining one or more conditions, and optionally defining one or more actions. Editing the monitor's request and adding or editing conditions and actions will bring you to a new form. When finished editing, press back to return to the edit monitors form. To add conditions or actions, select the type of condition or action, and click the "add" button. Depending on the condition or action type, you may need to fill out another form to set parameters for the condition / action. When done filling out the condition / action form, click *Menu>Save* or *back*. When you are done creating your monitor, press *back*, or *Menu>Save* again.
 
 To start your monitor, long-press it the monitor list, and select *Start*. Alternatively, use *Menu>Start All*.
 
