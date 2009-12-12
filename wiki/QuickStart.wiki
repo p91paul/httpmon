@@ -25,3 +25,7 @@ Monitors are automatically stopped when edited. You must re-start manually after
    * *Connection / Read Timeout* The maximum time to open a connection / read response from a monitor. 
    * *User Agent* Set the user agent header to use when contacting monitors. 
    * *Background Notification?* If enabled, httpmon will add an icon to the notification bar whenever monitors are running in the background.
+
+= View Log =
+
+*Menu > View* allows you to view a detailed log of httpmon's activity. This can be useful in determining why a monitor failed.
