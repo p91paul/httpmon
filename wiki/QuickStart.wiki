@@ -15,4 +15,10 @@ When you first start httpmon, you will see a message indicating that you have no
 
 To start your monitor, long-press it the monitor list, and select *Start*. Alternatively, use *Menu>Start All*.
 
-To modify an existing monitor, click it in the list (or long-press then click *Edit*). Monitors are automatically stopped before editing. You must restart manually. To remove a monitor, long-press then click *Remove*. By the same token, from the edit monitors form, long-press conditions and actions to remove / edit them, and click to edit.
+For a lists of objects in httpmon (monitors, conditions, and actions), edit the object by pressing on the list item. Long press on the list item to bring up additional options such as remove and start / stop for monitors.
+
+Monitors are automatically stopped when edited. You must re-start manually after your edit is complete.
+
+= Preferences =
+
+== Start at Boot? ==
