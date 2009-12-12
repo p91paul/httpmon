@@ -21,7 +21,7 @@ Monitors are automatically stopped when edited. You must re-start manually after
 
 = Preferences =
 
-* *Start at Boot?* If enabled, httpmon will restart all running monitors when your phone boots.
-* *Connection / Read Timeout* The maximum time to open a connection / read response from a monitor. 
-* *User Agent* Set the user agent header to use when contacting monitors. 
-* *Background Notification?* If enabled, httpmon will add an icon to the notification bar whenever monitors are running in the background.
+   * *Start at Boot?* If enabled, httpmon will restart all running monitors when your phone boots.
+   * *Connection / Read Timeout* The maximum time to open a connection / read response from a monitor. 
+   * *User Agent* Set the user agent header to use when contacting monitors. 
+   * *Background Notification?* If enabled, httpmon will add an icon to the notification bar whenever monitors are running in the background.
