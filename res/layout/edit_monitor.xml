@@ -4,7 +4,7 @@
 	<LinearLayout android:orientation="vertical"
 		android:layout_width="fill_parent" android:layout_height="wrap_content">
 		<LinearLayout android:orientation="vertical"
-			android:layout_margin="5px" android:padding="5px" android:background="#aaaaaa"
+			android:layout_margin="5dp" android:padding="5dp" android:background="#aaaaaa"
 			android:layout_width="fill_parent" android:layout_height="fill_parent">
 			<TextView android:layout_width="fill_parent"
 				android:textStyle="bold" android:textColor="#ffffff"
@@ -14,7 +14,7 @@
 				android:layout_height="wrap_content" />
 		</LinearLayout>
 		<LinearLayout android:orientation="vertical"
-			android:layout_margin="5px" android:padding="5px" android:background="#aaaaaa"
+			android:layout_margin="5dp" android:padding="5dp" android:background="#aaaaaa"
 			android:layout_width="fill_parent" android:layout_height="wrap_content">
 			<TextView android:layout_width="fill_parent"
 				android:textStyle="bold" android:textColor="#ffffff"
@@ -29,10 +29,10 @@
 				android:text="http://foo.bar.com?black=white&amp;wrong=right&amp;night=day" />
 			<Button android:id="@+id/edit_request_button"
 				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:text="Edit" android:layout_marginTop="10px" />
+				android:text="Edit" android:layout_marginTop="10dp" />
 		</LinearLayout>
 		<LinearLayout android:orientation="vertical"
-			android:layout_margin="5px" android:padding="5px" android:background="#aaaaaa"
+			android:layout_margin="5dp" android:padding="5dp" android:background="#aaaaaa"
 			android:layout_width="fill_parent" android:layout_height="wrap_content">
 			<TextView android:layout_width="fill_parent"
 				android:textStyle="bold" android:textColor="#ffffff"
@@ -40,7 +40,7 @@
 			<TextView android:id="@+id/empty_conditions_text"
 				android:text="[none]" android:textColor="#ffffff"
 				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_marginBottom="10px" />
+				android:layout_marginBottom="10dp" />
 			<ListView android:id="@+id/condition_list" android:entries="@array/test_conditions"
 				android:layout_width="fill_parent" android:layout_height="80dp"/>
 			<LinearLayout android:orientation="horizontal"
@@ -55,14 +55,14 @@
 			</LinearLayout>
 		</LinearLayout>
 		<LinearLayout android:orientation="vertical"
-			android:layout_margin="5px" android:padding="5px" android:background="#aaaaaa"
+			android:layout_margin="5dp" android:padding="5dp" android:background="#aaaaaa"
 			android:layout_width="fill_parent" android:layout_height="wrap_content">
 			<TextView android:layout_width="fill_parent"
 				android:textStyle="bold" android:textColor="#ffffff"
 				android:layout_height="wrap_content" android:text="Actions" />
 			<TextView android:id="@+id/empty_actions_text" android:text="[none]"
 				android:textColor="#ffffff" android:layout_width="fill_parent"
-				android:layout_height="wrap_content" android:layout_marginBottom="10px" />
+				android:layout_height="wrap_content" android:layout_marginBottom="10dp" />
 			<ListView android:id="@+id/action_list"
 				android:layout_width="fill_parent" android:layout_height="80dp"
 				android:visibility="gone" />

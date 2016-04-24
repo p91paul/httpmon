@@ -5,7 +5,7 @@
 		android:orientation="vertical" android:layout_width="fill_parent"
 		android:layout_height="wrap_content">
 		<LinearLayout android:orientation="vertical"
-			android:layout_margin="5px" android:padding="5px" android:background="#aaaaaa"
+			android:layout_margin="5dp" android:padding="5dp" android:background="#aaaaaa"
 			android:layout_width="fill_parent" android:layout_height="wrap_content">
 			<TextView android:layout_width="fill_parent"
 				android:textStyle="bold" android:textColor="#ffffff"
@@ -24,7 +24,7 @@
 				android:layout_height="wrap_content" android:text="consecutive failures." />
 		</LinearLayout>
 		<LinearLayout android:orientation="vertical"
-			android:layout_margin="5px" android:padding="5px" android:background="#aaaaaa"
+			android:layout_margin="5dp" android:padding="5dp" android:background="#aaaaaa"
 			android:layout_width="fill_parent" android:layout_height="wrap_content">
 			<TextView android:layout_width="fill_parent"
 				android:textStyle="bold" android:textColor="#ffffff"
